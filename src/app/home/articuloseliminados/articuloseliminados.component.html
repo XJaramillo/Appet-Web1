@@ -1,0 +1,52 @@
+<div class="center-articulos">
+    
+    <div class="busqueda">
+        <input type="text" placeholder="¿Buscas algun servicio eliminado en específico?" name="textoBuscar"
+        (keyup)="applyFilter($event.target.value)">
+    </div>
+    
+
+    <div id="cargando" *ngIf="!articulosEliminados">
+        <img src="../../../assets/images/carga.gif">
+    </div>
+
+    <div class="articles">
+        <article class="article-item" id="article-template">
+            <mat-table [dataSource]="listData" matSort>
+                <ng-container matColumnDef="Publicacion">
+                    <mat-header-cell *matHeaderCellDef>
+                        <h1>Publicación</h1>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <div class="image-wrap">
+                            <img [src]=" element.img == ''? '/assets/images/camera.png': element.img" alt="Articulo" />
+                        </div>
+                    </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="Datos">
+                    <mat-header-cell *matHeaderCellDef>
+                        <h1>Datos</h1>
+                    </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <td>
+                            <h2>{{element.titulo}}</h2>
+                            <h2>{{element.razon}}</h2>
+                            <span class="date">
+                                Fecha de eliminación:
+                                {{element.fechaEliminacion.toDate() | date:'yyyy/MM/dd h:mm:ss a' | amLocale: 'es' | amTimeAgo }}
+                            </span>
+                        </td>
+                    </mat-cell>
+                </ng-container>
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+            </mat-table>
+            <mat-paginator [pageSizeOptions]="[5, 10]" [pageSize]="5"></mat-paginator>
+        </article>
+
+        <!--AÑADIR ARTICULOS VIA JS-->
+
+    </div>
+
+
+

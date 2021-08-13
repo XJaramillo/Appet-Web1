@@ -1,0 +1,21 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div mat-dialog-content>{{message}}
+    <br>
+    <p>Ingrese la razon:</p>
+        <input matInput #razon type="text" class="form-control" placeholder="Ingrese la razon: ">
+</div>
+<div mat-dialog-actions >
+    <div style="align-content: center;">
+            <button *ngIf="razon.value ;else btnDisabled"  mat-button style="align-content: center;" [mat-dialog-close]= "razon.value">SI</button>
+            <ng-template #btnDisabled>
+                <button disabled=true  mat-button style="align-content: center;" [mat-dialog-close]= "razon.value">SI</button>
+              </ng-template>
+            <button mat-button style="align-content: center;" (click)="onclickNo()">NO</button>
+    </div>
+</div>
+
+ 
+
+

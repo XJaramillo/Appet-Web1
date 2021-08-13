@@ -1,0 +1,11 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div mat-dialog-content>{{message}}
+</div>
+<div mat-dialog-actions >
+    <div style="align-content: center;">
+            <button mat-button style="align-content: center;" (click)="dialogRef.close(true)">SI</button>
+            <button mat-button style="align-content: center;" (click)="onclickNo()">NO</button>
+    </div>
+</div>

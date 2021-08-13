@@ -1,0 +1,44 @@
+#salir {
+    display: block;
+    margin: 30px 10px;
+    align-content: center;
+    float: right;
+}
+#profile {
+    display: block;
+    margin: 15px;
+    text-align: center;
+    float: left;
+}
+div.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    display: block;
+    float: left;
+    margin: 20px 5px;
+    height: 50px;
+    width: 50px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100%;
+}
+.header-row{
+    font-weight: 500;
+    border-bottom: 2px solid tomato;
+}
+.data-row{
+    border-bottom: 1px solid tomato;
+}
+mat-footer-row mat-footer-cell{
+    justify-content: center;
+    font-style: italic;
+}
+.mat-column-Imagen {
+    flex: 0 0 150px;
+}
+.mat-column-Accion {
+  flex: 0 0 150px;
+}
+.mat-column-Descripcion {
+    flex: 0 0 800px;
+  }

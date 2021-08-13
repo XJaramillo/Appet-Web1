@@ -1,0 +1,30 @@
+<header id="header">
+    <div class="avatar" style="background-image: url('{{user.urlimage}}')"></div>
+    <div id="profile">
+        <h3>{{user.nombre}} {{user.apellido}}</h3>
+    </div>
+    <div id="salir">
+        <button mat-button  (click)="onClickNo()">Salir</button>
+    </div>
+</header>
+<div class="mat-elevation-z8">
+    <mat-table [dataSource]="listData" matSort>
+        <ng-container matColumnDef="fecha">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>FECHA</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.date.toDate() | date:'yyyy/MM/dd h:mm:ss a'}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="razon">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Razon</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.razon}}</mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="[5, 10]" [pageSize]="5"></mat-paginator>
+
+</div>
+
+           
+            
+        
+
