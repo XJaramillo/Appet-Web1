@@ -1,34 +1,82 @@
-<header id="header">
-    <div class="center">
-        <!-- LOGO -->
-        <div id="logo">
-            <img src="assets/images/logonew.jpeg" class="app-logo" alt="Logotipo" />
-        </div>
-        
-    
-        <!-- MENU -->
-        <nav id="menu">
-            <ul>
-                <li>
-                    <a [routerLink]="['/home/inicio']">Información</a>
-                </li>
-                <li>
-                    <a [routerLink]="['/home/articulos']" [routerLinkActive]="['active']">Todos Los Servicios</a>
-                </li>
-                <li>
-                    <a [routerLink]="['/home/usuarios']" [routerLinkActive]="['active']">Usuarios</a>
-                </li>
-                <li>
-                    <a [routerLink]="['/home/articuloseliminados']" [routerLinkActive]="['active']"> Servicios Borrados</a>
-                </li>
-                <li>
-                    <a (click)="logout()"> <mat-icon id="exit_to_app" aria-hidden="false" color="white" aria-label="Example home icon">account_circle</mat-icon> Salir</a>
-                </li>
-                                          
-            </ul>
-        </nav>
+<!DOCTYPE html>
+<html lang="en">
 
-        <!--LIMPIAR FLOTADOS-->
-        <div class="clearfix"></div>
+<head>
+  <title>HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <img src="https://elsol-compress.s3-accelerate.amazonaws.com/imagenes/001/183/389/001183389.png"
+      style="width: 100px; height: 80px;">
+    <img src="https://blogdelperromanolo.files.wordpress.com/2015/08/huella-02.png" style="width: 100px; height: 80px;">
+    <img src="https://elsol-compress.s3-accelerate.amazonaws.com/imagenes/001/183/389/001183389.png"
+      style="width: 100px; height: 80px;">
+
+    <img src="https://blogdelperromanolo.files.wordpress.com/2015/08/huella-02.png" style="width: 100px; height: 80px;">
+    <!-- <img src="https://image.flaticon.com/icons/png/512/2184/2184565.png" style="width: 90px; height: 80px;"> -->
+
+    <div class="navbar-header ">
+      <li>
+        <img src="https://image.flaticon.com/icons/png/512/2184/2184565.png" style="width: 100px; height: 80px;">
+      </li>
     </div>
-</header>
+    <ul class="nav navbar-nav">
+      <li>
+        <img src="https://elsol-compress.s3-accelerate.amazonaws.com/imagenes/001/183/389/001183389.png"
+          style="width: 100px; height: 80px;">
+      </li>
+      <li>
+        <img src="https://blogdelperromanolo.files.wordpress.com/2015/08/huella-02.png"
+          style="width: 100px; height: 80px;">
+      </li>
+      <li>
+        <img src="https://elsol-compress.s3-accelerate.amazonaws.com/imagenes/001/183/389/001183389.png"
+          style="width: 100px; height: 80px;">
+      </li>
+      <li>
+        <img src="https://blogdelperromanolo.files.wordpress.com/2015/08/huella-02.png"
+          style="width: 100px; height: 80px;">
+      </li>
+      <li>
+        <a [routerLink]="['/home/articulos']" [routerLinkActive]="['active']"
+          style="color: #ffffff; font-family: Comic Sans MS;">Todos Los
+          Servicios</a>
+      </li>
+      <li>
+        <a [routerLink]="['/home/usuarios']" [routerLinkActive]="['active']"
+          style="color: #ffffff; font-family: Comic Sans MS">Usuarios</a>
+      </li>
+      <li>
+        <a [routerLink]="['/home/articuloseliminados']" [routerLinkActive]="['active']"
+          style="color: #ffffff;font-family: Comic Sans MS">
+          Servicios Borrados</a>
+      </li>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a (click)="logout()" style="font-family: Comic Sans MS">
+            <mat-icon id="exit_to_app" aria-hidden="false" color="white" aria-label="Example home icon"
+              style="color: #ffffff; ">account_circle
+            </mat-icon> Salir
+          </a>
+        </li>
+
+      </ul>
+
+
+
+    </ul>
+
+  </nav>
+</body>
+
+</html>
+
+
+<!-- footer     
+ -->

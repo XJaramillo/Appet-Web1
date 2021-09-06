@@ -1,6 +1,6 @@
 <div class="center-articulos">
     
-    <div class="busqueda">
+    <div class="busqueda" style="font-family: Comic Sans MS; color: darkslateblue">
         <input type="text" placeholder="¿Buscas algun servicio eliminado en específico?" name="textoBuscar"
         (keyup)="applyFilter($event.target.value)">
     </div>
@@ -15,7 +15,7 @@
             <mat-table [dataSource]="listData" matSort>
                 <ng-container matColumnDef="Publicacion">
                     <mat-header-cell *matHeaderCellDef>
-                        <h1>Publicación</h1>
+                        <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Portada</h1>
                     </mat-header-cell>
                     <mat-cell *matCellDef="let element">
                         <div class="image-wrap">
@@ -25,7 +25,7 @@
                 </ng-container>
                 <ng-container matColumnDef="Datos">
                     <mat-header-cell *matHeaderCellDef>
-                        <h1>Datos</h1>
+                        <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Descripción</h1>
                     </mat-header-cell>
                     <mat-cell *matCellDef="let element">
                         <td>

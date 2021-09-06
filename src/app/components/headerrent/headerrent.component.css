@@ -1,0 +1,11 @@
+nav.navbar {
+    background-color: #f17525;
+}
+
+nav.navbar-right{
+    padding-left: 50%;
+}
+
+a{
+    color: blue;
+}

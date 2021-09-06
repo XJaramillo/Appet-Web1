@@ -2,11 +2,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
 </head>
-<div>
-    <label> Mostrar Usuarios Bloqueados</label>
+<div class="row">
+<div class="col-6">
+    <label style="font-family: Comic Sans MS; color: darkslateblue"> Mostrar Usuarios Bloqueados</label>
     <input type="checkbox" id="ina" name="ina" [checked]="ina" [(ngModel)]="ina" (change)="opcionIna()">
 </div>
-<div class="busqueda">
+</div>
+<div class="busqueda" style="font-family: Comic Sans MS; color: darkslateblue">
     <input type="text" placeholder="Buscar.. " name="textobuscar" (keyup)="applyFilter($event.target.value)">
 </div>
 <div id="cargando" *ngIf="!usersR">
@@ -18,7 +20,7 @@
         <mat-table [dataSource]="listData" matSort>
             <ng-container matColumnDef="Perfil">
                 <mat-header-cell *matHeaderCellDef>
-                    <h1>Perfil</h1>
+                    <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Perfil</h1>
                 </mat-header-cell>
                 <mat-cell *matCellDef="let element">
                     <div class="image-wrap">
@@ -28,7 +30,7 @@
             </ng-container>
             <ng-container matColumnDef="Datos">
                 <mat-header-cell *matHeaderCellDef>
-                    <h1>Datos</h1>
+                    <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Información</h1>
                 </mat-header-cell>
                 <mat-cell *matCellDef="let element">
                     <td>
@@ -44,12 +46,12 @@
             </ng-container>
             <ng-container matColumnDef="Cuenta">
                 <mat-header-cell *matHeaderCellDef>
-                    <h1>Estado Cuenta</h1>
+                    <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Estado Cuenta</h1>
                 </mat-header-cell>
                 <mat-cell *matCellDef="let element">
                     <table>
                         <tr>
-                            <td>{{element.inhabilitado ? 'Bloqueada' : 'Habilitada'}}</td>
+                            <td style="font-family: Comic Sans MS; color: darkslateblue">{{element.inhabilitado ? 'Bloqueada' : 'Habilitada'}}</td>
                             <td><button style="margin-left: 5px;" (click)="openDiagInha(element.nombre, element.apellido,element.uid, element.inhabilitado)">
                                 <mat-icon class="icono-user">editar</mat-icon>
                             </button></td>
@@ -59,12 +61,12 @@
             </ng-container>
             <ng-container matColumnDef="Usuario">
                 <mat-header-cell *matHeaderCellDef>
-                    <h1>Usuario</h1>
+                    <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Usuario</h1>
                 </mat-header-cell>
                 <mat-cell *matCellDef="let element">
                         <table>
                             <tr>
-                                <td>
+                                <td style="font-family: Comic Sans MS; color: darkslateblue">
                                     {{element.admin ? 'Administrador' : 'Normal'}}
                                 </td>
                                 <td>
@@ -80,9 +82,8 @@
                 <mat-header-cell *matHeaderCellDef>
                 </mat-header-cell>
                 <mat-cell *matCellDef="let element">
-                    <td>
+                    <td style="font-family: Comic Sans MS; color: white">
                         <button style="margin-left: 5px;" (click)="openArticlesUse(element)">Servicios Prestados</button>
-                        
                     </td>
                 </mat-cell>
             </ng-container>
@@ -94,7 +95,7 @@
         </div>
     </article>
     <a href="#" class="button blue">
-        <span class="icon-house"></span>Inicio
+        <span class="icon-house" style="font-family: Comic Sans MS; color: darkslateblue"></span>Inicio
     </a>
 
 </div>

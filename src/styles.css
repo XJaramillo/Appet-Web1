@@ -313,7 +313,7 @@ textarea{
 
 
 #footer{
-    background: #CA8B0E;
+    background: #f17525;
     width: 100%;
     height: 70px;
     line-height: 70px;
@@ -378,13 +378,13 @@ textarea{
 
 .article-item button{
     float: right;
-    background: rgb(228, 51, 51);
+    background:#f17525;
     
 }
 
 
 .user-item button:hover{
-    background: red;
+    background:#f17525;
 }
 
 .user-item .acciones{
@@ -478,12 +478,12 @@ textarea{
     text-align: 10px;
     margin-top: 10px;
     align-items: center;
-    background: #C4BF0D;
+    background: #f17525;
     
 }
 
 .user-item button:hover{
-    background: #EAE40F;
+    background:#f17525;
 }
 
 .user-item .acciones{

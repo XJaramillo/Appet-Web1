@@ -1,8 +1,8 @@
     <div class="center-articulos">
     
-    <div class="busqueda">
-        <input type="text" placeholder="¿Buscas algun servicio en específico?" name="textoBuscar"
-        (keyup)="applyFilter($event.target.value)">
+    <div class="busqueda" style="font-family: Comic Sans MS; color: darkslateblue">
+        <input type="text" placeholder="¿Buscas algun servicio en específico?" name="textoBuscar " 
+        (keyup)="applyFilter($event.target.value) ">
     </div>
     
 
@@ -16,7 +16,7 @@
             <mat-table [dataSource]="listData" matSort>
                 <ng-container matColumnDef="Publicacion">
                     <mat-header-cell *matHeaderCellDef>
-                        <h1>Publicación</h1>
+                        <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Portada</h1>
                     </mat-header-cell>
                     <mat-cell *matCellDef="let element">
                         <div class="image-wrap">
@@ -26,7 +26,7 @@
                 </ng-container>
                 <ng-container matColumnDef="Datos">
                     <mat-header-cell *matHeaderCellDef>
-                        <h1>Datos</h1>
+                        <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Descripción</h1>
                     </mat-header-cell>
                     <mat-cell *matCellDef="let element">
                         <td>
@@ -39,10 +39,10 @@
                 </ng-container>
                 <ng-container matColumnDef="Accion">
                     <mat-header-cell *matHeaderCellDef>
-                        <h1>Acción</h1>
+                        <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Acción</h1>
                     </mat-header-cell>
                     <mat-cell *matCellDef="let element">
-                        <button type="button" class="btn btn-default" (click)="eliminarArticulo(element.id)"> Eliminar<i
+                        <button type="button" class="btn btn-default" (click)="eliminarArticulo(element.id)" style="font-family: Comic Sans MS; color: white"> Eliminar<i
                             class="fa fa-trash"></i>
                     </button>
                     </mat-cell>

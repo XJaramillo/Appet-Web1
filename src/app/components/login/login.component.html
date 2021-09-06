@@ -5,7 +5,9 @@
 
 <body>
    <div id="login">
-      <h3 class="text-center text-white pt-5" style="margin-bottom: -30px;">Sistema de control APPET</h3>
+      <h1 class="text-center pt-5" style="margin-bottom: -30px; color: #ffffff; font-family:fantasy;">APPET</h1>
+
+      <h3 class="text-center pt-5" style="margin-bottom: -30px; color: #ffffff; font-family:apple;" >Consola Administrativa </h3>
      
            
       <div class="container">
@@ -15,16 +17,18 @@
                   <form id="login-form" class="form" action="" method="post">
                      <h3 class="text-center text-info"></h3>
                      <div class="form-group">
-                        <label  class="text-black">Correo:</label><br>
+                        <br><br>
+                        <label  class="text-white">Correo electrónico:</label><br>
                         <input (keyup.enter)="verificacionLogin()" type="text" class="form-control" placeholder="Ingrese el correo" #email1>
                      </div>
                      <div class="form-group">
-                        <label  class="text-black">Contraseña:</label><br>
+                        <label  class="text-white">Contraseña:</label><br>
                         <input (keyup.enter)="verificacionLogin()" type="password" class="form-control" placeholder="Ingrese su contraseña" #pass1>
                      </div>
-                     <div class="form-group">
-                        <button type="submit" (click)="verificacionLogin()" class="btn btn-primary btn-block btn-large">Login</button>
+                     <div class="row justify-content-center">
+                        <button type="submit" (click)="verificacionLogin()" class="btn btn-primary btn-block btn-large">INICIAR</button>
                      </div>
+                     <br>
                   </form>
                </div>
             </div>
@@ -33,4 +37,5 @@
    </div>
 
 </body>
+<img src="https://www.bbva.com/wp-content/uploads/2020/11/FotoMascotasSeguro-1920x733.jpg" style="width: 900px; margin-left:325px;">
 

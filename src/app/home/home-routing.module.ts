@@ -16,6 +16,7 @@ const routes: Routes = [
     { path: 'usuarios', component: UsuariosComponent, canActivate:[AuthGuard]},
     { path: 'inicio', component: InicioComponent, canActivate: [AuthGuard]},
     { path: 'articuloseliminados', component: ArticuloseliminadosComponent, canActivate: [AuthGuard]}
+    
   ]
 }
 ];
