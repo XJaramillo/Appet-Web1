@@ -30,6 +30,7 @@ import {FormsModule} from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ConfirmacionComponent } from './components/confirmacion/confirmacion.component';
 import { ArticulosusuarioComponent } from './components/articulosusuario/articulosusuario.component';
+import { ComentariosusuarioComponent } from './components/comentariosusuario/comentariosusuario.component';
 
 
 //se pasa al final el appcoponent para que se el ultimo en revisar las reglas de ruteo
@@ -47,7 +48,8 @@ import { ArticulosusuarioComponent } from './components/articulosusuario/articul
     HistoryComponent,
     ArticulosPipe,
     ConfirmacionComponent,
-    ArticulosusuarioComponent
+    ArticulosusuarioComponent,
+    ComentariosusuarioComponent
   ],
   imports: [
     BrowserModule,

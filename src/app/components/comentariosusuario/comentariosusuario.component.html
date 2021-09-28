@@ -10,22 +10,13 @@
 
 <div class="mat-elevation-z8">
     <mat-table [dataSource]="listData" matSort>
-        <ng-container matColumnDef="Imagen">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Imagen</mat-header-cell>
-            <mat-cell *matCellDef="let element">
-                    <img [src]=" element.img == ''? '/assets/images/camera.png': element.img" alt="Articulo" width="60px" height="60px"/>
-            </mat-cell>
-        </ng-container>
-        <ng-container matColumnDef="Titulo">
-            <mat-header-cell *matHeaderCellDef mat-sort-header>Titulo</mat-header-cell>
-            <mat-cell *matCellDef="let element">{{element.titulo}}</mat-cell>
-        </ng-container>
-        <ng-container matColumnDef="Descripcion">
-         
+        <ng-container matColumnDef="content">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Todos los Comentarios</mat-header-cell>
+            <mat-cell *matCellDef="let element">{{element.content}}</mat-cell>
         </ng-container>
         <ng-container matColumnDef="Accion">
             <mat-header-cell *matHeaderCellDef mat-sort-header>Acción</mat-header-cell>
-            <mat-cell *matCellDef="let element">
+            <mat-cell *matCellDef="let element">    
                 <button type="button" style="background: red; color: white;"
                         (click)="eliminarArticulo(element.id)">Eliminar</button>
             </mat-cell>

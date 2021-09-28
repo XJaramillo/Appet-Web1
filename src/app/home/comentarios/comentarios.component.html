@@ -3,10 +3,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
 </head>
 <div class="row">
-<div class="col-6">
-    <label style="font-family: Comic Sans MS; color: darkslateblue"> Mostrar Usuarios Bloqueados</label>
-    <input type="checkbox" id="ina" name="ina" [checked]="ina" [(ngModel)]="ina" (change)="opcionIna()">
-</div>
+
 </div>
 <div class="busqueda" style="font-family: Comic Sans MS; color: darkslateblue">
     <input type="text" placeholder="Buscar.. " name="textobuscar" (keyup)="applyFilter($event.target.value)">
@@ -47,45 +44,29 @@
             </ng-container>
             <ng-container matColumnDef="Cuenta">
                 <mat-header-cell *matHeaderCellDef>
-                    <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Estado Cuenta</h1>
+                    <h3 style="font-family: Comic Sans MS; color: darkslateblue;">Comentarios</h3>
                 </mat-header-cell>
                 <mat-cell *matCellDef="let element">
                     <table>
-                        <tr>
-                            <td style="font-family: Comic Sans MS; color: darkslateblue">{{element.inhabilitado ? 'Bloqueada' : 'Habilitada'}}</td>
-                            <td><button style="margin-left: 5px;" (click)="openDiagInha(element.nombre, element.apellido,element.uid, element.inhabilitado)">
-                                <mat-icon class="icono-user">editar</mat-icon>
-                            </button></td>
+                        <tr style="font-family: Comic Sans MS; color: white">
+                            <button style="margin-left: 5px;" (click)="openArticlesUse(element)">Todos los Comentarios</button>
                           </tr>
                     </table>
                 </mat-cell>
             </ng-container>
             <ng-container matColumnDef="Usuario">
                 <mat-header-cell *matHeaderCellDef>
-                    <h1 style="font-family: Comic Sans MS; color: darkslateblue;">Usuario</h1>
+                    
                 </mat-header-cell>
                 <mat-cell *matCellDef="let element">
-                        <table>
-                            <tr>
-                                <td style="font-family: Comic Sans MS; color: darkslateblue">
-                                    {{element.admin ? 'Administrador' : 'Normal'}}
-                                </td>
-                                <td>
-                                    <button style="margin-left: 5px;" (click)="openDiagAdmin(element.nombre, element.apellido,element.uid, element.admin)">
-                                        <mat-icon class="icono-user">editar</mat-icon>
-                                    </button>
-                                </td>
-                            </tr>
-                        </table>
+                      
                 </mat-cell>
             </ng-container>
             <ng-container matColumnDef="Visualizar">
                 <mat-header-cell *matHeaderCellDef>
                 </mat-header-cell>
                 <mat-cell *matCellDef="let element">
-                    <td style="font-family: Comic Sans MS; color: white">
-                        <button style="margin-left: 5px;" (click)="openArticlesUse(element)">Servicios Prestados</button>
-                    </td>
+                   
                 </mat-cell>
             </ng-container>
             <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

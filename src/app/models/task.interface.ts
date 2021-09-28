@@ -1,5 +1,5 @@
 export interface TaskI {
-    //variables a utilizar
+    //variables a utilizar para los servicios
     id?: any;
     titulo: string;
     descripcion: string;
@@ -9,3 +9,16 @@ export interface TaskI {
     fecha?: Date;
     userId: string;
 }
+
+export interface TaskII {
+    //variables a utilizar para comentarios
+    idPropietarioComen?: any;
+    apellido: string;
+    nombre: string;
+    content: string;
+    comentariosUsuarios: Array <any>;
+    
+}
+
+
+

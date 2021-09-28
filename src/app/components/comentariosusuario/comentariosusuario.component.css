@@ -1,13 +1,8 @@
-#ng-container{
-
-    color: black;
-}
 #salir {
     display: block;
     margin: 30px 10px;
     align-content: center;
     float: right;
-    color: black;
 }
 #profile {
     display: block;
@@ -30,8 +25,6 @@ div.avatar {
 .header-row{
     font-weight: 500;
     border-bottom: 2px solid tomato;
-    color: black;
-
 }
 .data-row{
     border-bottom: 1px solid tomato;

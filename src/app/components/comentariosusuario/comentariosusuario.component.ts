@@ -1,3 +1,20 @@
+/*import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-comentariosusuario',
+  templateUrl: './comentariosusuario.component.html',
+  styleUrls: ['./comentariosusuario.component.css']
+})
+export class ComentariosusuarioComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+
+*/
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
@@ -29,11 +46,11 @@ export interface razon {
 }
 
 @Component({
-  selector: 'app-articulosusuario',
-  templateUrl: './articulosusuario.component.html',
-  styleUrls: ['./articulosusuario.component.css']
+  selector: 'app-comentariosusuario',
+  templateUrl: './comentariosusuario.component.html',
+  styleUrls: ['./comentariosusuario.component.css']
 })
-export class ArticulosusuarioComponent implements OnInit {
+export class ComentariosusuarioComponent implements OnInit {
 
   articulo: TaskI = {
     id: '',
@@ -66,7 +83,7 @@ export class ArticulosusuarioComponent implements OnInit {
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  constructor(public dialogRef: MatDialogRef<ArticulosusuarioComponent>,
+  constructor(public dialogRef: MatDialogRef<ComentariosusuarioComponent>,
     private auth: AuthService,
     @Inject(MAT_DIALOG_DATA) public user: usuarioss,
     private articuloService: ArticulosService,
