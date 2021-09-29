@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "APPET": {
+    "appet-web": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/APPET",
+            "outputPath": "dist/appet-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "APPET:build"
+            "browserTarget": "appet-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "APPET:build:production"
+              "browserTarget": "appet-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "APPET:build"
+            "browserTarget": "appet-web:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "APPET:serve"
+            "devServerTarget": "appet-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "APPET:serve:production"
+              "devServerTarget": "appet-web:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "APPET"
+  "defaultProject": "appet-web"
 }
