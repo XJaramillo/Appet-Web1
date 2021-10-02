@@ -20,7 +20,7 @@ export const environment = {
 
   //Configuracion credenciales Firebase
 /*   export const firebaseConfig  = {
-
+ Si se requiere otra base para poder guardar archivos y almacenar.
     apiKey: "AIzaSyDbUwhq6r26AMkhO167ufdA93HReHQPvyg",
     authDomain: "topicosesp2020b.firebaseapp.com",
     databaseURL: "https://topicosesp2020b-default-rtdb.firebaseio.com",
