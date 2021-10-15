@@ -17,7 +17,6 @@ export const environment = {
   }
 };
 
-
   //Configuracion credenciales Firebase
 /*   export const firebaseConfig  = {
  Si se requiere otra base para poder guardar archivos y almacenar.
